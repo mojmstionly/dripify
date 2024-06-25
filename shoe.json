@@ -1,0 +1,35 @@
+{
+    "$ref": "basic_shoe.json",
+    "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "link": {
+                        "type": "string"
+                    },
+                    "thumbnail": {
+                        "type": "string"
+                    },
+                    "brand": {
+                        "type": "string"
+                    },
+                    "sku": {
+                        "type": "string"
+                    },
+                    "price": {
+                        "type": "string"
+                    },
+                    "Saleprice": {
+                        "type": "string"
+                    },
+                    "make": {
+                        "type": "string"
+                    },
+                    "silhoutte": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    }
+    }
+}
