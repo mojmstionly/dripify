@@ -322,10 +322,13 @@ outline:none;border: 0;
 
 
 
+@media only screen and (min-width:767px) {
 
-
-
-
+.productt{
+  width: 100vh;
+  max-width: 100vh;
+}
+}
 
 
 
@@ -3107,8 +3110,7 @@ for (var attr in meta) {
 
         </div>
     
-        <div style="    width: 100vh;
-    max-width: 100vh;" class="detail product-column-right cc-animate-init -in cc-animate-complete" data-cc-animate="" data-cc-animate-delay="0.2s" style="">
+        <div class="detail product-column-right cc-animate-init -in cc-animate-complete productt" data-cc-animate="" data-cc-animate-delay="0.2s" style="">
           <div class="product-form theme-init" data-ajax-add-to-cart="true" data-product-id="7833039110284" data-enable-history-state="true">
               
                   <div class="title-row">
@@ -4018,7 +4020,7 @@ var SOCIAL_LOGIN_CUSTOMER_LOGGED_IN = false;
       }
 </script>
 
-<!--
+
 
 <script>
             $.getJSON('https://solegasm.in/isSale.json', function(datas) {
@@ -4102,6 +4104,6 @@ var SOCIAL_LOGIN_CUSTOMER_LOGGED_IN = false;
                 window.scroll({ top: topOfElement, behavior: "smooth" });
             }
         </script>
-        -->
+     
 </body>
 </html>
