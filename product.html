@@ -18,8 +18,10 @@
             }
         var xy;
         function LoadPics(ok){
+          url=`https://images.stockx.com/360/${ok}/Images/${ok}/Lv2/img01.jpg?fm=webp&auto=compress&w=576&dpr=2&updated_at=1715800317&h=384&q=60`
         $.ajax({
-    url:`https://res.cloudinary.com/dmbkv8jp3/image/upload/v1666005597/${ok}/img1.webp`,
+    //url:`https://res.cloudinary.com/dmbkv8jp3/image/upload/v1666005597/${ok}/img1.webp`,
+    url: url,
     type:'HEAD',
     error: function()
     {
@@ -30,7 +32,11 @@
     {     
         let element = document.getElementById("canvas1");
         let imagesArray = Array.from(new Array(36), (v, k) => {
-          return `https://res.cloudinary.com/dmbkv8jp3/image/upload/v1666005597/${ok}/img${k+1}.webp`;
+          if(k+1<10){
+          return `https://images.stockx.com/360/${ok}/Images/${ok}/Lv2/img0${k+1}.jpg?fm=webp&auto=compress&w=576&dpr=2&updated_at=1715800317&h=384&q=60`;
+        }
+        else
+        return `https://images.stockx.com/360/${ok}/Images/${ok}/Lv2/img${k+1}.jpg?fm=webp&auto=compress&w=576&dpr=2&updated_at=1715800317&h=384&q=60`;
         });
       
         let instance1 = new AnimateImages(element, {
