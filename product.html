@@ -2105,6 +2105,9 @@ for (var attr in meta) {
     display: block; 
     margin-inline-end: 20px;
 }
+.main-search__results{
+  display: none;
+}
 </style>
 <div data-section-type="header" data-cc-animate>
   <div id="pageheaderr" class=" pageheader--sticky">
@@ -2158,447 +2161,50 @@ for (var attr in meta) {
           data-live-search-meta="false"
           data-per-row-mob="2">
 
-        <div class="main-search__container container">
-          <button class="main-search__close button notabutton" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x" aria-hidden="true" style="stroke: "><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
-
-          <form class="main-search__form" action="/search" method="get" autocomplete="off">
-            <input type="hidden" name="type" value="product" />
-            <input type="hidden" name="options[prefix]" value="last" />
-            <div class="main-search__input-container">
-              <input class="main-search__input" type="text" name="q" autocomplete="off" placeholder="Search..." aria-label="Search Store" />
-            </div>
-            <button class="main-search__button button notabutton" type="submit" aria-label="Submit"><svg width="24px" height="24px" viewBox="0 0 24 24" aria-hidden="true">
-    <g transform="translate(3.000000, 3.000000)" stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd">
-        <circle cx="7.82352941" cy="7.82352941" r="7.82352941"></circle>
-        <line x1="13.9705882" y1="13.9705882" x2="18.4411765" y2="18.4411765" stroke-linecap="square"></line>
-    </g>
-</svg></button>
-          </form>
-
-          <div class="main-search__results"></div>
-
-          
-        </div>
+          <div class="main-search__container container">
+            <button class="main-search__close button notabutton" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x" aria-hidden="true" style="stroke: "><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+  
+            <form class="main-search__form" action="/products" method="get" autocomplete="off">
+              <div class="main-search__input-container">
+                <input class="main-search__input" type="text" name="q" autocomplete="off" placeholder="Search..." aria-label="Search Store" />
+              </div>
+              <button class="main-search__button button notabutton" type="submit" aria-label="Submit"><svg width="24px" height="24px" viewBox="0 0 24 24" aria-hidden="true">
+      <g transform="translate(3.000000, 3.000000)" stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd">
+          <circle cx="7.82352941" cy="7.82352941" r="7.82352941"></circle>
+          <line x1="13.9705882" y1="13.9705882" x2="18.4411765" y2="18.4411765" stroke-linecap="square"></line>
+      </g>
+  </svg></button>
+            </form>
+  
+            <div class="main-search__results"></div>
+  
+            
+          </div>
       </div></div>
 
   <div id="main-nav" class="desktop-only">
     <div class="navigation navigation--main" role="navigation" aria-label="Primary navigation">
       <div class="navigation__tier-1-container">
         <ul class="navigation__tier-1">
-  
-<li class="navigation__item navigation__item--with-children navigation__item--with-mega-menu">
-      <a href="/collections/navbar-sneakers" class="navigation__link" aria-haspopup="true" aria-expanded="false" aria-controls="NavigationTier2-1">SNEAKERS</a>
-
-      
-        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-
-        <div id="NavigationTier2-1" class="navigation__tier-2-container navigation__child-tier"><div class="container">
-              <ul class="navigation__tier-2 navigation__columns navigation__columns--count-8 navigation__columns--over-5-cols">
-                
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/new-arrivals-1" class="navigation__link" >NEW IN</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__item--with-children navigation__column">
-                      <a href="/collections/air-jordans" class="navigation__link navigation__column-title" aria-haspopup="true" aria-expanded="false">JORDANS</a>
-                      
-                        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                      
-
-                      
-                        <div class="navigation__tier-3-container navigation__child-tier">
-                          <ul class="navigation__tier-3">
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/jordan-1-lows">JORDAN LOWS</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/jordan-1-mid">JORDAN MIDS</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/jordan-1-highs">JORDAN HIGHS</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/jordan-3s">JORDAN 2s</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/jordan-3s-1">JORDAN 3s</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/jordan-4">JORDAN 4s</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/jordan-5s">JORDAN 5s</a>
-                            </li>
-                            
-                          </ul>
-                        </div>
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__item--with-children navigation__column">
-                      <a href="/collections/yeezy" class="navigation__link navigation__column-title" aria-haspopup="true" aria-expanded="false">YEEZYS</a>
-                      
-                        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                      
-
-                      
-                        <div class="navigation__tier-3-container navigation__child-tier">
-                          <ul class="navigation__tier-3">
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/yeezy-350">YEEZY 350</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/yeezy-381">YEEZY 380</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/yeezy-700">YEEZY 700</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/yeezy-slides">YEEZY SLIDES</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/yeezy-foam-rnr">YEEZY FOAM RNNR</a>
-                            </li>
-                            
-                          </ul>
-                        </div>
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__item--with-children navigation__column">
-                      <a href="/collections/nike-dunks" class="navigation__link navigation__column-title" aria-haspopup="true" aria-expanded="false">DUNKS</a>
-                      
-                        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                      
-
-                      
-                        <div class="navigation__tier-3-container navigation__child-tier">
-                          <ul class="navigation__tier-3">
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/nike-dunk-lows">DUNK LOW</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/dunk-highs">DUNK HIGH</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/nike-sb-dunk">SB DUNK</a>
-                            </li>
-                            
-                          </ul>
-                        </div>
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__item--with-children navigation__column">
-                      <a href="/collections/nike-air-force-1" class="navigation__link navigation__column-title" aria-haspopup="true" aria-expanded="false">AIR FORCE</a>
-                      
-                        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                      
-
-                      
-                        <div class="navigation__tier-3-container navigation__child-tier">
-                          <ul class="navigation__tier-3">
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/air-force-low">AIR FORCE LOW</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/airforce-mid">AIR FORCE MID</a>
-                            </li>
-                            
-                          </ul>
-                        </div>
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/air-max" class="navigation__link" >AIR MAX</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/new-balance" class="navigation__link" >NEW BALANCE</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/grails-1" class="navigation__link" >GRAILS</a>
-                      
-
-                      
-                    </li>
-                  
-                
-</ul>
-            </div></div>
-      
-    </li>
-  
-<li class="navigation__item navigation__item--with-children navigation__item--with-small-menu">
-      <a href="/collections/navbar-apparel" class="navigation__link" aria-haspopup="true" aria-expanded="false" aria-controls="NavigationTier2-2">STREETWEAR</a>
-
-      
-        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-
-        <div id="NavigationTier2-2" class="navigation__tier-2-container navigation__child-tier"><div class="container">
-              <ul class="navigation__tier-2">
-                
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/drew-house" class="navigation__link" >DREW HOUSE</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/essentials" class="navigation__link" >FEAR OF GOD</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/assc" class="navigation__link" >ANTI SOCIAL SOCIAL CLUB</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/octobers-very-own" class="navigation__link" >OCTOBER’S VERY OWN</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/supreme" class="navigation__link" >SUPREME</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/palm-angels" class="navigation__link" >PALM ANGELS</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/off-white" class="navigation__link" >OFF WHITE</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/amiri" class="navigation__link" >AMIRI</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/pages/coming-soon" class="navigation__link" >BRANDS</a>
-                      
-
-                      
-                    </li>
-                  
-                
-</ul>
-            </div></div>
-      
-    </li>
-  
-<li class="navigation__item navigation__item--with-children navigation__item--with-mega-menu">
-      <a href="/collections/octobers-very-own" class="navigation__link" aria-haspopup="true" aria-expanded="false" aria-controls="NavigationTier2-3">ACCESSORIES</a>
-
-      
-        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-
-        <div id="NavigationTier2-3" class="navigation__tier-2-container navigation__child-tier"><div class="container">
-              <ul class="navigation__tier-2 navigation__columns navigation__columns--count-4">
-                
-                  
-                    <li class="navigation__item navigation__item--with-children navigation__column">
-                      <a href="/search" class="navigation__link navigation__column-title" aria-haspopup="true" aria-expanded="false">JEWELLERY</a>
-                      
-                        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                      
-
-                      
-                        <div class="navigation__tier-3-container navigation__child-tier">
-                          <ul class="navigation__tier-3">
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/chains">CHAINS</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/pendant">PENDANTS</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/search">BRACELETS</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/rings">RINGS</a>
-                            </li>
-                            
-                          </ul>
-                        </div>
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/skateboard-deck" class="navigation__link" >SKATEBOARD DECK</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/rugs" class="navigation__link" >RUGS</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__item--with-children navigation__column">
-                      <a href="/collections/bags" class="navigation__link navigation__column-title" aria-haspopup="true" aria-expanded="false">BAGS</a>
-                      
-                        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                      
-
-                      
-                        <div class="navigation__tier-3-container navigation__child-tier">
-                          <ul class="navigation__tier-3">
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/bags">TOKIKE</a>
-                            </li>
-                            
-                          </ul>
-                        </div>
-                      
-                    </li>
-                  
-                
-</ul>
-            </div></div>
-      
-    </li>
-  
-<li class="navigation__item navigation__item--with-children navigation__item--with-mega-menu">
-      <a href="/collections/hype-collection" class="navigation__link" aria-haspopup="true" aria-expanded="false" aria-controls="NavigationTier2-4">HYPE</a>
-
-      
-        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-
-        <div id="NavigationTier2-4" class="navigation__tier-2-container navigation__child-tier"><div class="container">
-              <ul class="navigation__tier-2 navigation__columns navigation__columns--count-4">
-                
-                  
-                    <li class="navigation__item navigation__item--with-children navigation__column">
-                      <a href="/pages/coming-soon" class="navigation__link navigation__column-title" aria-haspopup="true" aria-expanded="false">WATCH</a>
-                      
-                        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                      
-
-                      
-                        <div class="navigation__tier-3-container navigation__child-tier">
-                          <ul class="navigation__tier-3">
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/swatch-x-omega-bioceramic-moonswatch-collection">SWATCH X OMEGA</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/swatch-x-blancpain-bioceramic-scuba-fifty-fathoms-collection">SWATCH X BLANCPAIN</a>
-                            </li>
-                            
-                          </ul>
-                        </div>
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/tech" class="navigation__link" >SONY PLAYSTATION 5</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/sports-drink" class="navigation__link" >DRINK</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/collectibles" class="navigation__link" >COLLECTIBLES</a>
-                      
-
-                      
-                    </li>
-                  
-                
-</ul>
-            </div></div>
-      
-    </li>
-  
+   
 <li class="navigation__item">
-      <a href="/collections/care" class="navigation__link" >CARE</a>
+  <a href="/products" class="navigation__link" >PRODUCTS</a>
 
-      
-    </li>
   
-<li class="navigation__item">
-      <a href="/apps/tracktor/track" class="navigation__link" >TRACK MY ORDER</a>
+</li>
 
-      
-    </li>
+<li class="navigation__item">
+  <a href="https://wa.me/919560733719" class="navigation__link" >CONTACT US</a>
+
   
-<li class="navigation__item">
-      <a href="#smile-home" class="navigation__link" >LOYALTY REWARDS</a>
+</li>
 
-      
-    </li>
   
 </ul>
       </div>
     </div>
-  </div><script class="mobile-navigation-drawer-template" type="text/template">
+  </div>
+  <script class="mobile-navigation-drawer-template" type="text/template">
     <div class="mobile-navigation-drawer" data-mobile-expand-with-entire-link="true">
       <div class="navigation navigation--main" role="navigation" aria-label="Primary navigation">
         <div class="navigation__tier-1-container">
@@ -2609,411 +2215,22 @@ for (var attr in meta) {
           </div>
           <ul class="navigation__tier-1">
   
-<li class="navigation__item navigation__item--with-children navigation__item--with-mega-menu">
-      <a href="/collections/navbar-sneakers" class="navigation__link" aria-haspopup="true" aria-expanded="false" aria-controls="NavigationTier2-1-mob">SNEAKERS</a>
-
-      
-        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-
-        <div id="NavigationTier2-1-mob" class="navigation__tier-2-container navigation__child-tier"><div class="container">
-              <ul class="navigation__tier-2 navigation__columns navigation__columns--count-8 navigation__columns--over-5-cols">
-                
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/new-arrivals-1" class="navigation__link" >NEW IN</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__item--with-children navigation__column">
-                      <a href="/collections/air-jordans" class="navigation__link navigation__column-title" aria-haspopup="true" aria-expanded="false">JORDANS</a>
-                      
-                        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                      
-
-                      
-                        <div class="navigation__tier-3-container navigation__child-tier">
-                          <ul class="navigation__tier-3">
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/jordan-1-lows">JORDAN LOWS</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/jordan-1-mid">JORDAN MIDS</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/jordan-1-highs">JORDAN HIGHS</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/jordan-3s">JORDAN 2s</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/jordan-3s-1">JORDAN 3s</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/jordan-4">JORDAN 4s</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/jordan-5s">JORDAN 5s</a>
-                            </li>
-                            
-                          </ul>
-                        </div>
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__item--with-children navigation__column">
-                      <a href="/collections/yeezy" class="navigation__link navigation__column-title" aria-haspopup="true" aria-expanded="false">YEEZYS</a>
-                      
-                        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                      
-
-                      
-                        <div class="navigation__tier-3-container navigation__child-tier">
-                          <ul class="navigation__tier-3">
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/yeezy-350">YEEZY 350</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/yeezy-381">YEEZY 380</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/yeezy-700">YEEZY 700</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/yeezy-slides">YEEZY SLIDES</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/yeezy-foam-rnr">YEEZY FOAM RNNR</a>
-                            </li>
-                            
-                          </ul>
-                        </div>
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__item--with-children navigation__column">
-                      <a href="/collections/nike-dunks" class="navigation__link navigation__column-title" aria-haspopup="true" aria-expanded="false">DUNKS</a>
-                      
-                        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                      
-
-                      
-                        <div class="navigation__tier-3-container navigation__child-tier">
-                          <ul class="navigation__tier-3">
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/nike-dunk-lows">DUNK LOW</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/dunk-highs">DUNK HIGH</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/nike-sb-dunk">SB DUNK</a>
-                            </li>
-                            
-                          </ul>
-                        </div>
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__item--with-children navigation__column">
-                      <a href="/collections/nike-air-force-1" class="navigation__link navigation__column-title" aria-haspopup="true" aria-expanded="false">AIR FORCE</a>
-                      
-                        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                      
-
-                      
-                        <div class="navigation__tier-3-container navigation__child-tier">
-                          <ul class="navigation__tier-3">
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/air-force-low">AIR FORCE LOW</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/airforce-mid">AIR FORCE MID</a>
-                            </li>
-                            
-                          </ul>
-                        </div>
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/air-max" class="navigation__link" >AIR MAX</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/new-balance" class="navigation__link" >NEW BALANCE</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/grails-1" class="navigation__link" >GRAILS</a>
-                      
-
-                      
-                    </li>
-                  
-                
-</ul>
-            </div></div>
-      
-    </li>
+    
   
-<li class="navigation__item navigation__item--with-children navigation__item--with-small-menu">
-      <a href="/collections/navbar-apparel" class="navigation__link" aria-haspopup="true" aria-expanded="false" aria-controls="NavigationTier2-2-mob">STREETWEAR</a>
-
-      
-        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-
-        <div id="NavigationTier2-2-mob" class="navigation__tier-2-container navigation__child-tier"><div class="container">
-              <ul class="navigation__tier-2">
-                
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/drew-house" class="navigation__link" >DREW HOUSE</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/essentials" class="navigation__link" >FEAR OF GOD</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/assc" class="navigation__link" >ANTI SOCIAL SOCIAL CLUB</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/octobers-very-own" class="navigation__link" >OCTOBER’S VERY OWN</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/supreme" class="navigation__link" >SUPREME</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/palm-angels" class="navigation__link" >PALM ANGELS</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/off-white" class="navigation__link" >OFF WHITE</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/collections/amiri" class="navigation__link" >AMIRI</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item">
-                      <a href="/pages/coming-soon" class="navigation__link" >BRANDS</a>
-                      
-
-                      
-                    </li>
-                  
-                
-</ul>
-            </div></div>
-      
-    </li>
+   
   
-<li class="navigation__item navigation__item--with-children navigation__item--with-mega-menu">
-      <a href="/collections/octobers-very-own" class="navigation__link" aria-haspopup="true" aria-expanded="false" aria-controls="NavigationTier2-3-mob">ACCESSORIES</a>
 
-      
-        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-
-        <div id="NavigationTier2-3-mob" class="navigation__tier-2-container navigation__child-tier"><div class="container">
-              <ul class="navigation__tier-2 navigation__columns navigation__columns--count-4">
-                
-                  
-                    <li class="navigation__item navigation__item--with-children navigation__column">
-                      <a href="/search" class="navigation__link navigation__column-title" aria-haspopup="true" aria-expanded="false">JEWELLERY</a>
-                      
-                        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                      
-
-                      
-                        <div class="navigation__tier-3-container navigation__child-tier">
-                          <ul class="navigation__tier-3">
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/chains">CHAINS</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/pendant">PENDANTS</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/search">BRACELETS</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/rings">RINGS</a>
-                            </li>
-                            
-                          </ul>
-                        </div>
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/skateboard-deck" class="navigation__link" >SKATEBOARD DECK</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/rugs" class="navigation__link" >RUGS</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__item--with-children navigation__column">
-                      <a href="/collections/bags" class="navigation__link navigation__column-title" aria-haspopup="true" aria-expanded="false">BAGS</a>
-                      
-                        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                      
-
-                      
-                        <div class="navigation__tier-3-container navigation__child-tier">
-                          <ul class="navigation__tier-3">
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/bags">TOKIKE</a>
-                            </li>
-                            
-                          </ul>
-                        </div>
-                      
-                    </li>
-                  
-                
-</ul>
-            </div></div>
-      
-    </li>
   
-<li class="navigation__item navigation__item--with-children navigation__item--with-mega-menu">
-      <a href="/collections/hype-collection" class="navigation__link" aria-haspopup="true" aria-expanded="false" aria-controls="NavigationTier2-4-mob">HYPE</a>
 
-      
-        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-
-        <div id="NavigationTier2-4-mob" class="navigation__tier-2-container navigation__child-tier"><div class="container">
-              <ul class="navigation__tier-2 navigation__columns navigation__columns--count-4">
-                
-                  
-                    <li class="navigation__item navigation__item--with-children navigation__column">
-                      <a href="/pages/coming-soon" class="navigation__link navigation__column-title" aria-haspopup="true" aria-expanded="false">WATCH</a>
-                      
-                        <a class="navigation__children-toggle" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><title>Toggle menu</title><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                      
-
-                      
-                        <div class="navigation__tier-3-container navigation__child-tier">
-                          <ul class="navigation__tier-3">
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/swatch-x-omega-bioceramic-moonswatch-collection">SWATCH X OMEGA</a>
-                            </li>
-                            
-                            <li class="navigation__item">
-                              <a class="navigation__link" href="/collections/swatch-x-blancpain-bioceramic-scuba-fifty-fathoms-collection">SWATCH X BLANCPAIN</a>
-                            </li>
-                            
-                          </ul>
-                        </div>
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/tech" class="navigation__link" >SONY PLAYSTATION 5</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/sports-drink" class="navigation__link" >DRINK</a>
-                      
-
-                      
-                    </li>
-                  
-                    <li class="navigation__item navigation__column">
-                      <a href="/collections/collectibles" class="navigation__link" >COLLECTIBLES</a>
-                      
-
-                      
-                    </li>
-                  
-                
-</ul>
-            </div></div>
-      
-    </li>
   
 <li class="navigation__item">
-      <a href="/collections/care" class="navigation__link" >CARE</a>
+      <a href="/collections/care" class="navigation__link" >CONTACT US</a>
 
       
     </li>
   
 <li class="navigation__item">
-      <a href="/apps/tracktor/track" class="navigation__link" >TRACK MY ORDER</a>
-
-      
-    </li>
-  
-<li class="navigation__item">
-      <a href="#smile-home" class="navigation__link" >LOYALTY REWARDS</a>
+      <a href="./products" class="navigation__link" >PRODUCTS</a>
 
       
     </li>
@@ -3064,7 +2281,7 @@ for (var attr in meta) {
               <a class="breadcrumbs-list__link" href="/products">ALL SNEAKERS</a> <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><title>Right</title><polyline points="9 18 15 12 9 6"></polyline></svg></span>
             </li><li class="breadcrumbs-list__item">
             <a id="name2" class="breadcrumbs-list__link" aria-current="page">Nike Dunk Genesis Low RTFKT OG (Edition of 6841)</a>
-          </li></ol><div class="breadcrumbs-prod-nav"><a class="breadcrumbs-prod-nav__link breadcrumbs-prod-nav__link--next" href="/collections/navbar-sneakers/products/nike-dunk-genesis-low-rtfkt-void-edition-of-11394" title="Nike Dunk Genesis Low RTFKT Void (Edition of 11394)">
+          </li></ol><div class="breadcrumbs-prod-nav"><a class="breadcrumbs-prod-nav__link breadcrumbs-prod-nav__link--next" href="/products/products/nike-dunk-genesis-low-rtfkt-void-edition-of-11394" title="Nike Dunk Genesis Low RTFKT Void (Edition of 11394)">
               <span class="breadcrumbs-prod-nav__text">Next</span> <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><title>Right</title><polyline points="9 18 15 12 9 6"></polyline></svg></span>
             </a></div></nav>
     
@@ -3349,7 +2566,7 @@ for (var attr in meta) {
                             <span class="with-icon__beside">RETURNS</span>
                           </div></summary>
       <div class="cc-accordion-item__panel">
-        <div class="cc-accordion-item__content rte cf"><p>All sales with Dripify are final.</p><p>If you have any questions or concerns with regard to sizing or condition of a specific product on our site, please&nbsp;<a href="https://sneakerplug.co.in/pages/contact" title="https://sneakerplug.co.in/pages/contact">contact us</a>&nbsp;before purchasing.</p></div>
+        <div class="cc-accordion-item__content rte cf"><p>Please make a video of the opening of the product , if it is found damage your product will be replaced within 3-5 business days, &nbsp;<a href="https://wa.me/919560733719" title="">contact us</a>&nbsp;.</p></div>
       </div>
     </details>
     </div>
@@ -3636,10 +2853,10 @@ for (var attr in meta) {
     <div class="">
       <h2 class="hometitle h4-style align-center has-paging" data-cc-animate data-cc-animate-delay="0.3s">
         
-        <a class="has-paging__title" href="/collections/navbar-sneakers"><span>Related</span></a>
+        <a class="has-paging__title" href="/products"><span>Related</span></a>
         
       </h2><div class="view-all align-center" data-cc-animate data-cc-animate-delay="0.3s">
-          <a class="small-feature-link" href="/collections/navbar-sneakers">View all</a>
+          <a class="small-feature-link" href="/products">View all</a>
         </div><div class="collection-listing" data-cc-animate="cc-fade-in-up">
         <div id="trending" class="product-list product-list--per-row-4 product-list--per-row-mob-2 product-list--image-shape-shortest ">
       
@@ -3789,7 +3006,7 @@ for (var attr in meta) {
       <div class="index-categories">
         
           <div class="category-block">
-            <a href="/pages/dripify-subscription">
+            <a href="./products?q=Jordan">
               <div class="category-block-image">
                 <img class="square-image" src="./Jordan.png" alt=""/>
                 <div class="category-block-image--secondary">
@@ -3803,7 +3020,7 @@ for (var attr in meta) {
           </div>
         
           <div class="category-block">
-            <a href="/collections/all-things-iced-dripify">
+            <a href="./products?q=Yeezy">
               <div class="category-block-image">
                 <img class="square-image" src="./Yeezy.png" alt=""/>
                 <div class="category-block-image--secondary">
@@ -3970,9 +3187,36 @@ var SOCIAL_LOGIN_CUSTOMER_LOGGED_IN = false;
     document.getElementById('price').innerHTML="₹ "+price;
     
   }).fail(function(){
-      console.log("FAILLLLL fail")
-      
-}
+            
+            $.ajax({
+    url: 'https://xw7sbct9v6-1.algolianet.com/1/indexes/products/query?x-algolia-agent=Algolia%20for%20vanilla%20JavaScript%203.32.1&x-algolia-application-id=XW7SBCT9V6&x-algolia-api-key=6b5e76b49705eb9f51a06d3c82f7acee',
+    type: 'post',
+    data: `{"params":"query=${name}&facets=*&filters=&hitsPerPage=1"}`,
+    headers: {        
+        "accept": "application/json",
+        "accept-language": "en-US,en;q=0.9",
+        "content-type": "application/x-www-form-urlencoded"
+    },
+    success: function(data) {
+        let shoe = data.hits[0];
+        namee=shoe.name;
+            price="Inquire for price";
+            pic=shoe.thumbnail_url;
+       
+            document.getElementById('name').innerHTML=namee;
+    document.getElementById('name2').innerHTML=namee;     
+    document.getElementById('desc').innerHTML=shoe.description;
+    document.getElementById('price').innerHTML="₹ "+price;
+
+            if(shoe.thumbnail_url.includes('.jpg'))
+            LoadPics(shoe.thumbnail_url.split('/images/').pop().split('.jpg')[0].replace("-Product",""));
+        else if(shoe.thumbnail_url.includes('.jpeg'))
+        LoadPics(shoe.thumbnail_url.split('/images/').pop().split('.jpeg')[0].replace("-Product",""));
+        else
+        LoadPics(shoe.thumbnail_url.split('/images/').pop().split('.png')[0].replace("-Product",""));
+        
+    }});
+    }
 );
   }
   else
@@ -4004,17 +3248,12 @@ var SOCIAL_LOGIN_CUSTOMER_LOGGED_IN = false;
 
 
 <script>
-            $.getJSON('.//isSale.json', function(datas) {
             $.getJSON('.//AllShoes.json', function(data) {
                 for (let i = 0; i < 9; i++) {
                     $.getJSON('.//shoes/'+data[i]+".json", function(shoe) {
                         let x=shoe.thumbnail.split("fill");
                         let price=shoe.price;
                         let orig="Price";
-                        if(datas.sale=="true"){
-                        price=shoe.Saleprice;
-                        orig='<s>₹'+shoe.price+'</s>';
-                        }
                     
                 
 
@@ -4044,7 +3283,7 @@ var SOCIAL_LOGIN_CUSTOMER_LOGGED_IN = false;
       <div class="product-info">
         <div class="inner">
           <div class="innerer">
-            <a class="product-link" href="/collections/navbar-sneakers/products/nike-sb-dunk-low-premium-city-of-style"><div class="product-block__title">`+shoe.name+`</div><div class="product-price">
+            <a class="product-link" href="./product?p=` + shoe.link + `"><div class="product-block__title">`+shoe.name+`</div><div class="product-price">
                 
                 <span class="product-price__item product-price__amount  theme-money"><span class=money>₹ `+price+`</span>
 </span>
@@ -4067,8 +3306,6 @@ var SOCIAL_LOGIN_CUSTOMER_LOGGED_IN = false;
                 for (let i = 0; i < loader.length; i++)
                     loader[i].remove();
              });
-            });
-
             function getElementByXpath(path) {
                 return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
             }
